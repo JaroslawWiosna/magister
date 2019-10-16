@@ -1,7 +1,7 @@
 # magister
 command-line Latin teacher
 
-<!-- TODO: Add fancy bagdes -->
+<!-- TODO(#2): Add fancy bagdes -->
 
 ## ...
 
