@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDERD_REQUIRED ON)
 
 set (SOURCES
     src/main.cpp
+    src/logger.cpp
 )
 
 add_executable(${PROJECT_NAME}
