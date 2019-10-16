@@ -5,5 +5,5 @@ command-line Latin teacher
 
 ## ...
 
-<!-- TODO: Remember about gif in README --> 
+<!-- TODO(#3): Remember about gif in README --> 
 
