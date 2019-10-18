@@ -1,0 +1,20 @@
+#: ...
+msgid "another I"
+msgstr "alter ego"
+
+#: ...
+msgid "Let it be printed"
+msgstr "imprimatur"
+
+#: ...
+msgid "Devil's advocate"
+msgstr "advocatus diaboli"
+
+#: ...
+msgid "from then"
+msgstr "ex tunc"
+
+#: ...
+msgid "from now on"
+msgstr "ex nunc"
+
