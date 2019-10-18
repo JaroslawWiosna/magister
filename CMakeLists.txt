@@ -6,6 +6,8 @@ magister
 
 project(${PROJECT_NAME})
 
+option(BUILD_TESTS "Build tests" ON)
+
 set(CMAKE_CXX_STANDERD_REQUIRED ON)
 
 set (SOURCES
@@ -20,3 +22,12 @@ add_executable(${PROJECT_NAME}
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
 
+enable_testing()
+
+if(BUILD_TESTS)
+	set(GTEST_FLAGS "-lgtest")
+    set(LINK_FLAGS "-lpthread")
+    set(LINK_FLAGS "${GTEST_FLAGS} ${LINK_FLAGS}")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMPILE_FLAGS}" )
+	add_subdirectory(tests)
+endif()
