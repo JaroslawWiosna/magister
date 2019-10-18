@@ -34,7 +34,6 @@ std::list<PoFileEntry> readPoFile(std::string filepath) {
 
 void prettyPrint(const std::list<PoFileEntry>& lst) {
     std::cout << "List:\n";
-    // TODO(#6): Structure bindings not supported in travis' gcc
     for (const auto& [msgid, msgstr] : lst) {
         std::cout << msgid << "\n" << msgstr << "\n\n";
     }
