@@ -6,11 +6,32 @@ compiler:
     - gcc
     - clang
 
+install:
+    - if [ "$CXX" = "g++" ]; then export CC="gcc-7" CXX="g++-7"; fi
+    - if [ "$CXX" = "clang++" ]; then export CC="clang-5.0" CXX="clang++-5.0"; fi    
+    
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-trusty
+            - llvm-toolchain-trusty-5.0
+            - george-edison55-precise-backports
+        packages:
+            - gcc-7
+            - g++-7
+            - clang-5.0
+            - clang++-5.0
+            - llvm-5.0-dev
+            - cmake
+            - libgtest-dev
+    
 before_script:
     - echo "before_script"
+    - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
 
 script: 
-    - cmake -H. -B_builds && (cd _builds/ && make clean && cmake --build .)
+    - cmake -H. -B_builds && (cd _builds/ && make clean && make -j1 && make test)
 
 after_success:
     - echo "success!"
