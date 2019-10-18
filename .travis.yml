@@ -6,6 +6,16 @@ compiler:
     - gcc
     - clang
 
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-trusty
+            - llvm-toolchain-trusty-5.0
+            - george-edison55-precise-backports
+        packages:
+            - libgtest-dev
+    
 before_script:
     - echo "before_script"
 
