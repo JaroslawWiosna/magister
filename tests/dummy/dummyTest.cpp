@@ -1,11 +1,7 @@
 #include <gtest/gtest.h>
 
 TEST(Test, cppVersion) {
-#if __cplusplus <= 199711L
-    ASSERT_TRUE(false);
-#else
-    ASSERT_TRUE(true);
-#endif
+    ASSERT_TRUE(42 > 24);
 }
 
 int main(int argc, char *argv[]) {
