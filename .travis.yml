@@ -46,7 +46,7 @@ after_success:
     - lcov --base-directory build --capture --output-file coverage.info
     - cd _builds
     - make clean
-    - cmake -DBUILD_TESTS=ON ..
+    - cmake -DCOVERAGE=ON ..
     - make
     - make test
     - cd -
