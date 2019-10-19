@@ -18,7 +18,9 @@ endif()
 set (SOURCES
     src/main.cpp
     src/logger.cpp
+    src/CacheOfSentences.cpp
     src/PoFileEntry.cpp
+    src/Sentence.cpp
 )
 
 add_executable(${PROJECT_NAME}

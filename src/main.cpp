@@ -1,5 +1,6 @@
 #include "logger.hpp"
 #include "PoFileEntry.hpp"
+#include "CacheOfSentences.hpp"
 #include <iostream>
 
 int main() {
@@ -9,7 +10,11 @@ int main() {
 
     auto lst = po::readPoFile("../dict.txt");
 
-    po::prettyPrint(lst);
+    // po::prettyPrint(lst);
+
+    CacheOfSentences cache{lst};
+
+    
 
     return 0;
 }
