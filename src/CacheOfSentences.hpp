@@ -10,7 +10,7 @@
 
 class CacheOfSentences {
 public:
-    CacheOfSentences(const std::list<po::PoFileEntry>& lst) {
+    explicit CacheOfSentences(const std::list<po::PoFileEntry>& lst) {
     unsigned int id{};
         for (const auto &[msgid, msgstr] : lst) {
             cache.push_back(std::make_shared<Sentence>(id++, msgid, msgstr));
