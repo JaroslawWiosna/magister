@@ -1,3 +1,6 @@
+#ifndef POFILEENTRY_H
+#define POFILEENTRY_H
+
 #include <iostream>
 #include <string>
 #include <list>
@@ -15,3 +18,5 @@ std::list<PoFileEntry> readPoFile(std::string filepath);
 void prettyPrint(const std::list<PoFileEntry>& lst);
 
 }
+
+#endif
