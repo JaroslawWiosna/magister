@@ -4,7 +4,7 @@
 
 std::string Logger::loggerFilepath = "./log_magister.txt";
 
-void Logger::makeLogEntry(std::string text) {
+void Logger::makeLogEntry(const std::string& text) {
     using namespace std;
     ofstream file;
     file.open(loggerFilepath);
