@@ -5,7 +5,7 @@
 namespace po {
 
 struct PoFileEntry {
-    PoFileEntry(std::string msgid, std::string msgstr) : msgid{msgid}, msgstr{msgstr} {}
+    PoFileEntry(const std::string& msgid, const std::string& msgstr) : msgid{msgid}, msgstr{msgstr} {}
     std::string msgid;
     std::string msgstr;
 };
