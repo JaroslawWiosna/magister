@@ -1,4 +1,5 @@
 #include "logger.hpp"
+#include "Lesson.hpp"
 #include "PoFileEntry.hpp"
 #include "CacheOfSentences.hpp"
 #include <iostream>
@@ -14,7 +15,10 @@ int main() {
 
     CacheOfSentences cache{lst};
 
-    
+    auto lesson = Lesson::makeLesson(cache);
+
+    lesson.start();
+    lesson.summary();
 
     return 0;
 }

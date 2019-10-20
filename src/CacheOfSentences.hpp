@@ -23,14 +23,14 @@ public:
         }
         for (auto it = cache.begin(); it != cache.end(); ++it) {
             for (auto jt = cache.begin(); jt != cache.end(); ++jt) {
-                std::cout << (**it).english << "\t" << (**jt).latin << "\tSimilar? " << (**it).others[*jt] << "\n";
+                // std::cout << (**it).english << "\t" << (**jt).latin << "\tSimilar? " << (**it).others[*jt] << "\n";
                 
             }
         }
 
     }
 
-private:
+// private:
     std::list<std::shared_ptr<Sentence>> cache;
 
 };
