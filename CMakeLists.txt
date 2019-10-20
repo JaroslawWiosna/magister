@@ -14,7 +14,9 @@ set(CMAKE_CXX_STANDERD_REQUIRED ON)
 if(COVERAGE)
   set(COMPILE_FLAGS "-ftest-coverage -fprofile-arcs")
 endif()
-  
+
+set(COMPILE_FLAGS  "${COMPILE_FLAGS} -std=c++1z -Wall -O2 -Wno-missing-braces")
+
 set (SOURCES
     src/main.cpp
     src/logger.cpp
