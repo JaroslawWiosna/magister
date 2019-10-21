@@ -2,6 +2,7 @@
 #include "Lesson.hpp"
 #include "PoFileEntry.hpp"
 #include "CacheOfSentences.hpp"
+#include "CompileTimeSentences_demo.hpp"
 #include <iostream>
 
 int main() {
@@ -15,7 +16,7 @@ int main() {
 
     CacheOfSentences cache{lst};
 
-    auto lesson = Lesson::makeLesson(cache);
+    auto lesson = Lesson::makeLesson(compileTimeSentences);
 
     lesson.start();
     lesson.summary();

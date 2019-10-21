@@ -8,6 +8,7 @@
 using SimilarityMeasure = float;
 
 struct Sentence {
+    Sentence(const std::string& english, const std::string& latin) : id{0}, english{english}, latin{latin}, others{} {}
     Sentence(unsigned int id, const std::string& english, const std::string& latin) : id{id}, english{english}, latin{latin}, others{} {}
 
     unsigned int id;
