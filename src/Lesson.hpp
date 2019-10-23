@@ -11,7 +11,7 @@
 
 struct SuggestedAnswers {
     unsigned int idCorrectAnswer;
-    std::vector<std::string> answers;
+    std::vector<std::shared_ptr<Sentence>> sentences;
 };
 
 class Lesson {
