@@ -76,6 +76,8 @@ void Lesson::summary() {
     std::cout << "Your score is: " << correctAnswersCnt << "/" << totalCnt << "\n";
 }
 
+// TODO(#18): The correct answer is always first
+// Let's shuffle suggested answers!
 SuggestedAnswers Lesson::suggestAnswers(std::shared_ptr<Sentence> current, const std::list<std::shared_ptr<Sentence>>& sentences) {
     // we take current by copy, so... ref_cnt is incremented, right?
     SuggestedAnswers result;
