@@ -84,6 +84,7 @@ SuggestedAnswers Lesson::suggestAnswers(std::shared_ptr<Sentence> current, const
 
     auto it = sentences.begin();
     while (result.sentences.size() < 3) {
+        it = sentences.begin();
         std::advance(it, generateRandomNumberFromZeroTo(sentences.size() - 1));
         if (*it == current) {
             continue;
