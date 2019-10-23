@@ -14,3 +14,31 @@
 
 <!-- TODO(#3): Remember about gif in README --> 
 
+```console
+We have 3 sentences to translate:
+1. veni vidi vici
+        0. before the war
+        1. voice of the people
+        2. I came, I saw, I conquered
+
+0
+:'-(
+2. ante bellum
+        0. always prepared
+        1. before the war
+        2. always faithful
+
+1
+Very well!
+3. mea culpa
+        0. prepare for war
+        1. my fault
+        2. before the war
+
+1
+Very well!
+Summary of the lesson:
+Your score is: 2/3
+```
+
+
