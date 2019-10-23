@@ -16,7 +16,7 @@ if(COVERAGE)
 endif()
 
 # TODO(#16): Add debug option -g
-# TODO: Add make debugger or make gdb to start debugger if possible
+# TODO(#17): Add make debugger or make gdb to start debugger if possible
 set(COMPILE_FLAGS  "${COMPILE_FLAGS} -std=c++1z -Wall -O2 -Wno-missing-braces")
 
 set (SOURCES
