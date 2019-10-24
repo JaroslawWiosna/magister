@@ -46,6 +46,8 @@ Lesson::Lesson(const CacheOfSentences& cache) : totalCnt{3}, sentences{cache} {
 void Lesson::start() {
     std::cout << "We have " << totalCnt << " sentences to translate:" << "\n";
 
+    std::cout << "\n------------\n";
+
     unsigned int i{};
     auto rndIndexes = generate_x_unique_number_from_0_to_n(totalCnt, sentences.cache.size()-1);
     for (const auto& index : rndIndexes) {
@@ -72,6 +74,8 @@ void Lesson::start() {
             std::cout << ":'-(" << "\n";
         }
         ++i;
+        std::cout << "\n------------\n";
+
     }
 
 }

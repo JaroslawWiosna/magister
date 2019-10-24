@@ -10,35 +10,52 @@
 
 > command-line Latin teacher
 
-## ...
+## Demo
 
 <!-- TODO(#3): Remember about gif in README --> 
 
 ```console
 We have 3 sentences to translate:
-1. veni vidi vici
-        0. before the war
-        1. voice of the people
-        2. I came, I saw, I conquered
 
-0
-:'-(
-2. ante bellum
-        0. always prepared
-        1. before the war
-        2. always faithful
+------------
+
+        greater things are pressing
+
+1. veni, vidi, vici
+2. tempus vernum
+3. maiora premunt
+
+3
+Very well!
+
+------------
+
+        strongly and willingly
+
+1. valenter volenter
+2. caveat emptor
+3. sic gorgiamus allos subjectatos nunc
 
 1
 Very well!
-3. mea culpa
-        0. prepare for war
-        1. my fault
-        2. before the war
 
-1
+------------
+
+        guard the city, O Lord
+
+1. astra inclinant, sed non obligant
+2. nunquam obliviscar
+3. custodi civitatem, Domine
+
+3
 Very well!
+
+------------
 Summary of the lesson:
-Your score is: 2/3
+Your score is: 3/3
+
 ```
 
+#### Special thanks to
 
+[Tsoding's snitch](https://github.com/tsoding/snitch)
