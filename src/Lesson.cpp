@@ -46,12 +46,11 @@ Lesson::Lesson(const CacheOfSentences& cache) : totalCnt{3}, sentences{cache} {
 void Lesson::start() {
     std::cout << "We have " << totalCnt << " sentences to translate:" << "\n";
 
-    auto it=sentences.cache.begin();
     unsigned int i{};
     auto rndIndexes = generate_x_unique_number_from_0_to_n(totalCnt, sentences.cache.size()-1);
     for (const auto& index : rndIndexes) {
     // for (auto it=sentences.cache.begin(); i < totalCnt; i++, it++) {
-        it = sentences.cache.begin();
+        auto it = sentences.cache.begin();
         std::advance(it, index);
         std::cout << (i+1) << ". " << (**it).english << "\n";
         auto suggestedAnswers = suggestAnswers(*it, sentences.cache);
