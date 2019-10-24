@@ -47,7 +47,7 @@ after_success:
     - cd _builds
     - make clean
     - cmake -DCOVERAGE=ON ..
-    - make
+    - make -j2
     - make test
     - cd -
     - lcov --directory . --capture --output-file coverage.info
