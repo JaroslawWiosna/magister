@@ -23,6 +23,7 @@ set (SOURCES
     src/main.cpp
     src/logger.cpp
     src/CacheOfSentences.cpp
+    src/CompileTimeSentences_demo.cpp
     src/Lesson.cpp
     src/PoFileEntry.cpp
     src/Sentence.cpp

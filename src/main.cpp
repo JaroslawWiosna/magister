@@ -8,7 +8,7 @@
 int main() {
     std::puts ("Hello magister!");
     std::cout << __cplusplus << "\n";
-    Logger::makeLogEntry("Hello magister :)");
+    Logger::makeLogEntry("Hello magister :) ;)");
 
     auto lst = po::readPoFile("../dict.txt");
 
@@ -16,7 +16,7 @@ int main() {
 
     CacheOfSentences cache{lst};
 
-    auto lesson = Lesson::makeLesson(compileTimeSentences);
+    auto lesson = Lesson::makeLesson(getCompileTimeSentences());
 
     lesson.start();
     lesson.summary();
