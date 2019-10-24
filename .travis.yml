@@ -36,7 +36,7 @@ before_script:
     - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
 
 script: 
-    - cmake -H. -B_builds && (cd _builds/ && make clean && make -j1 && make test)
+    - cmake -H. -B_builds && (cd _builds/ && make clean && make -j2 && make test)
 
 after_success:
     - cd ${TRAVIS_BUILD_DIR} 
