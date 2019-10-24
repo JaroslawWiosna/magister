@@ -52,19 +52,19 @@ void Lesson::start() {
     // for (auto it=sentences.cache.begin(); i < totalCnt; i++, it++) {
         auto it = sentences.cache.begin();
         std::advance(it, index);
-        std::cout << (i+1) << ". " << (**it).english << "\n";
+        std::cout << "\n\t" << (**it).english << "\n\n";
         auto suggestedAnswers = suggestAnswers(*it, sentences.cache);
 
-        unsigned int j{};
+        unsigned int j{1};
         for (const auto& item : suggestedAnswers.sentences) {
-            std::cout << "\t" << j++ << ". " << (*item).latin << "\n";
+            std::cout << j++ << ". " << (*item).latin << "\n";
         }
         std::cout << "\n";
 
         unsigned int userAnswer;
         std::cin >> userAnswer;
 
-        if (suggestedAnswers.idCorrectAnswer == userAnswer) {
+        if (suggestedAnswers.idCorrectAnswer == (userAnswer-1)) {
             correctAnswersCnt++;
             // To do: shuffle between "Great, outstanding, Magnificent"
             std::cout << "Very well!" << "\n";
