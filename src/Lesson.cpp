@@ -100,7 +100,10 @@ SuggestedAnswers Lesson::suggestAnswers(std::shared_ptr<Sentence> current, const
         }
         if (result.sentences.end() != std::find(result.sentences.begin(), result.sentences.end(), *it)) {
             continue;
-        } 
+        }
+        if (makeMeasure((*it)->latin, current->latin) < SimilarityMeasure{0.6f}) {
+            continue;
+        }
         result.sentences.push_back(*it);
     }
 

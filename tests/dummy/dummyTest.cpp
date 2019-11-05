@@ -6,7 +6,7 @@ TEST(Test, cppVersion) {
 }
 
 TEST(Test, dummy01) {
-    ASSERT_TRUE(1.0f == makeMeasure("foo", "foo"));
+    ASSERT_EQ(1.0f, makeMeasure("foo", "foo"));
 }
 
 
