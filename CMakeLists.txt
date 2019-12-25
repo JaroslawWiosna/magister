@@ -9,7 +9,7 @@ project(${PROJECT_NAME})
 option(BUILD_TESTS "Build tests" ON)
 option(COVERAGE "Enable coverage" OFF)
 
-set(CMAKE_CXX_STANDERD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(COVERAGE)
   set(COMPILE_FLAGS "-ftest-coverage -fprofile-arcs")
